@@ -37,3 +37,15 @@ A functional calculator app built using HTML, CSS, and JavaScript. It supports b
 ---
 
 > _“Striving for excellence in every line of code.”_
+
+
+## 🎯 Goals
+
+My goal is to continuously improve my skills by building real-world projects, contributing to open-source communities, and exploring new technologies. I believe in writing clean, efficient, and maintainable code while keeping user experience at the core.
+
+## 📈 Future Plans
+
+- Add backend functionality to existing projects using Node.js and Express.
+- Learn and implement React for dynamic and interactive UIs.
+- Explore deployment using cloud platforms like AWS and Vercel.
+- Contribute to open-source projects and collaborate with other developers.
