@@ -49,3 +49,9 @@ My goal is to continuously improve my skills by building real-world projects, co
 - Learn and implement React for dynamic and interactive UIs.
 - Explore deployment using cloud platforms like AWS and Vercel.
 - Contribute to open-source projects and collaborate with other developers.
+
+
+# 🚀 Daily Progress Log
+
+Committed to learning, building, and improving every single day.  
+Every small step counts towards something big. 🌱
