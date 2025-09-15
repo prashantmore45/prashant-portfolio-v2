@@ -2,6 +2,14 @@
 
 Welcome to my portfolio! Here you'll find information about my projects, skills, and experience as a developer.
 
+## Features
+- Modern responsive design with light/dark theme toggle  
+- Sections: Home, About, Projects, and Contact  
+- Typing animation on homepage  
+- Links to social profiles and GitHub projects  
+- Deployed live using GitHub Pages  
+
+
 ## 🚀 Projects
 
 - **Project 1:** AMAZON CLONE --> 
