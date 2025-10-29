@@ -26,5 +26,11 @@ export const projects = [
         name: 'Simple Calculato',
         description: "A functional calculator built with HTML, CSS, and JavaScript. Supports basic arithmetic operations and a clean, responsive UI for smooth usage.",
         link: "https://github.com/prashantmore45/Simple-Calculator"
+    }, {
+        id: '5',
+        image: 'images/aiimage.png',
+        name: 'AI Image Generator',
+        description: "A web application that generates images based on user prompts using OpenAI's DALL·E API. Built with HTML, CSS, and JavaScript.",
+        link: "https://github.com/prashantmore45/AI-Image-Generator"
     }
 ];
