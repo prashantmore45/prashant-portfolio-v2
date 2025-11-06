@@ -17,7 +17,10 @@ projects.forEach((project) => {
       <img src="${project.image}" alt="Amazon Clone Project Screenshot">
       <h3>${project.name}</h3>
       <p>${project.description}</p>
-      <a href="${project.link}" target="_blank">View on GitHub</a>
+      <div class="project-links">
+        <a href="${project.link}" target="_blank">View on GitHub</a>
+        <a href="${project.demo}" target="_blank">Live Demo</a>
+      </div>
     </div>`;
   }
 )

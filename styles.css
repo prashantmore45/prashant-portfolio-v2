@@ -57,6 +57,7 @@ nav .left {
   display: none;
   font-size: 2rem;
   cursor: pointer;
+  -webkit-user-select: none;
   user-select: none;
 }
 
@@ -236,6 +237,7 @@ nav ul li a:hover {
   padding: 8px 15px;
   border-radius: 5px;
   font-weight: 500;
+  font-size: 0.83rem;
   transition: background 0.3s ease;
 }
 
@@ -243,50 +245,65 @@ nav ul li a:hover {
   background-color: var(--accent-hover, #8a6fe2);
 }
 
+.project-links {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
 
-    .contact form {
-      max-width: 500px;
-      margin: auto;
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-    }
 
-    .contact input, .contact textarea {
-      padding: 10px;
-      border-radius: 5px;
-      border: none;
-      font-family: 'Poppins', sans-serif;
-    }
+.contact form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
 
-    .contact button {
-      background-color: var(--accent-color);
-      color: white;
-      padding: 10px;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-    }
+.contact input, .contact textarea {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+}
 
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: var(--footer-color);
-      color: var(--text-color);
-    }
+.contact button {
+  background-color: var(--accent-color);
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
 
-    @media (max-width: 768px) {
-      nav {
-        flex-direction: column;
-        gap: 10px;
-      }
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: var(--footer-color);
+  color: var(--text-color);
+}
 
-      .firstSection {
-        flex-direction: column;
-        text-align: center;
-      }
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
 
-      .leftSection {
-        font-size: 2rem;
-      }
-    }
+  .firstSection {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .leftSection {
+    font-size: 2rem;
+  }
+}
+
+.footer {
+  margin-bottom: 10px;
+}
+
+.footer a {
+  margin: 0 10px;
+  color: var(--text-color);
+}

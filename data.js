@@ -11,7 +11,8 @@ export const projects = [
         image: 'images/tictac.png',
         name: 'Tic Tac Toe Game',
         description: "A classic two-player game built with HTML, CSS, and JavaScript. Includes interactive game board, win detection logic, and a reset button for replayability.",
-        link: "https://github.com/prashantmore45/Tic-Tac-Toe-Game"
+        link: "https://github.com/prashantmore45/Tic-Tac-Toe-Game",
+        demo: "https://prashantmore45.github.io/Tic-Tac-Toe-Game/"
     },
     {
         id: '3',
