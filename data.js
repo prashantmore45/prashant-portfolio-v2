@@ -29,7 +29,7 @@ export const projects = [
         name: 'Simple Calculator',
         description: "A functional calculator built with HTML, CSS, and JavaScript. Supports basic arithmetic operations and a clean, responsive UI for smooth usage.",
         link: "https://github.com/prashantmore45/Simple-Calculator",
-        demo: "Coming Soon"
+        demo: "https://prashantmore45.github.io/Simple-Calculator/"
     }, {
         id: '5',
         image: 'images/aiimage.png',
