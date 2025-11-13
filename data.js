@@ -36,13 +36,13 @@ export const projects = [
         name: 'AI Image Generator',
         description: "A web application that generates images based on user prompts using OpenAI's DALL·E API. Built with HTML, CSS, and JavaScript.",
         link: "https://github.com/prashantmore45/AI-Image-Generator",
-        demo: "Coming Soon"
+        demo: "https://ai-image-generator-vert-nine.vercel.app/"
     }, {
         id: '6',
         image: 'images/aichatbot.png',
         name: 'AI Chatbot',
         description: "A web-based AI chatbot application that utilizes Google Gemini's API to provide intelligent and context-aware responses to user queries. Built with HTML, CSS, and JavaScript.",
         link: "https://github.com/prashantmore45/AI---Chatbot",
-        demo: "Coming Soon"
+        demo: "https://ai-chatbot-b8k7.onrender.com/"
     }
 ];
