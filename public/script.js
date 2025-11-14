@@ -1,6 +1,6 @@
 // CONFIG: Set your backend URL
 
-const BACKEND = "http://localhost:5000";
+const BACKEND = "https://prashant-portfolio-v2-backend.onrender.com";
 
 // Replace after deployment
 
