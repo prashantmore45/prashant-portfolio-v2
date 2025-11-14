@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prashant - Developer Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="left">Prashant's Portfolio</div>
+
+      <div class="hamburger">☰</div>
+
+      <ul class="right">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button class="theme-toggle" onclick="toggleTheme()">🌙</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Home Section -->
+    <section class="firstSection section" id="home">
+      <div class="leftSection">
+        Hi, My name is <span class="purple">Prashant</span><br />
+        and I am a <span id="element"></span><br />
+        <button type="button" class="cta">Download Resume</button>
+      </div>
+      <div class="rightSection">
+        <img src="images/bg.png" alt="Prashant working on a computer" />
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+      <h2>About Me</h2>
+      <p>
+        I'm a passionate Web Developer and Computer Engineering student with a strong interest in building real-world web applications and intelligent systems. I love learning new technologies and turning creative ideas into functional digital experiences.
+      </p>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects section" id="projects">
+      <h2>Projects</h2>
+      <div class="project-container">
+        <!-- Project cards will be dynamically inserted here -->
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact section" id="contact">
+      <h2>Contact Me</h2>
+      <form id="contactForm">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer">
+
+      <a href="https://www.instagram.com/_prashant.___45/" target="_blank" rel="noopener noreferrer" title="Visit Prashant on Instagram" aria-label="Visit Prashant on Instagram">
+        <i class="fab fa-instagram fa-2x" aria-hidden="true"></i>
+      </a>
+
+      <a href="https://www.linkedin.com/in/prashant-more-48b164287" target="_blank" rel="noopener noreferrer" title="Visit Prashant on LinkedIn" aria-label="Visit Prashant on LinkedIn">
+        <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
+      </a>
+
+      <a href="mailto:prashantmorepm05@gmail.com" target="_blank" rel="noopener noreferrer" title="Email Prashant" aria-label="Email Prashant">
+        <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+      </a>
+
+    </div>
+    
+    <div style="margin-top: 10px;">
+      Visitors: <span id="visitorCount">--</span>
+    </div>
+
+    © 2025 Prashant More. All rights reserved.
+  </footer>
+
+  <!-- Typed JS -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script>
+    var typed = new Typed("#element", {
+      strings: ["Web Developer", "Coder", "UI Designer", "Tech Enthusiast"],
+      typeSpeed: 80,
+      backSpeed: 50,
+      loop: true
+    });
+  </script>
+
+  <!-- Theme Toggle Script -->
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle('light-mode');
+    }
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
