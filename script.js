@@ -7,11 +7,13 @@ const BACKEND = "https://prashant-portfolio-v2-backend.onrender.com";
 
 // MOBILE NAVBAR HAMBURGER
 
-const hamburger = document.querySelector(".hamburger");
-const navLinks = document.querySelector(".right");
+const hamburger = document.querySelector(".left");
+const sidebar = document.getElementById("sidebar");
 
 hamburger.addEventListener("click", () => {
-  navLinks.classList.toggle("active");
+
+  sidebar.classList.toggle("active");
+
 });
 
 
