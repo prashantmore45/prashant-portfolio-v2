@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <!-- Dark outer circle gradient -->
+    <radialGradient id="bg" cx="50%" cy="50%" r="70%">
+      <stop offset="0%" stop-color="#0e0f12"/>
+      <stop offset="100%" stop-color="#0a0b0d"/>
+    </radialGradient>
+
+    <!-- Letter P gradient -->
+    <linearGradient id="pgrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#5e6cf8"/>
+      <stop offset="45%" stop-color="#3a7beb"/>
+      <stop offset="100%" stop-color="#17c3ff"/>
+    </linearGradient>
+
+    <!-- Gloss highlight gradient -->
+    <radialGradient id="gloss" cx="50%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#ffffff33"/>
+      <stop offset="60%" stop-color="#ffffff08"/>
+      <stop offset="100%" stop-color="#ffffff00"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Outer circle -->
+  <circle cx="256" cy="256" r="240" fill="url(#bg)" />
+
+  <!-- Gloss -->
+  <circle cx="256" cy="180" r="220" fill="url(#gloss)" />
+
+  <!-- P Letter -->
+  <path d="M170 115h100c80 0 130 45 130 115s-50 115-130 115h-40v150h-60V115zm100 60h-40v110h40c50 0 70-25 70-55s-20-55-70-55z"
+        fill="url(#pgrad)"/>
+</svg>
