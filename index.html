@@ -12,23 +12,39 @@
 </head>
 
 <body>
-  <header>
-    <nav>
-      <div class="left">Prashant's Portfolio</div>
 
-      <div class="hamburger">☰</div>
+  <!-- SIDEBAR -->
+  <div id="sidebar" class="sidebar">
+    <a href="javascript:void(0)" class="close-btn" onclick="closeSidebar()">×</a>
+    <a href="#home" onclick="closeSidebar()">Home</a>
+    <a href="#about" onclick="closeSidebar()">About</a>
+    <a href="#skills" onclick="closeSidebar()">Skills</a>
+    <a href="#projects" onclick="closeSidebar()">Projects</a>
+    <a href="#contact" onclick="closeSidebar()">Contact</a>
+  </div>
+
+  <header>
+
+    <nav>
+      <div class="left">
+        <span class="menu-icon" onclick="openSidebar()">☰</span>
+        Prashant's Portfolio
+      </div>
 
       <ul class="right">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
         <li><button class="theme-toggle" onclick="toggleTheme()">🌙</button></li>
       </ul>
     </nav>
+
   </header>
 
   <main>
+
     <!-- Home Section -->
     <section class="firstSection section" id="home">
       <div class="leftSection">
@@ -49,6 +65,26 @@
       </p>
     </section>
 
+    <!-- Skills Section -->
+    <section class="skills section" id="skills">
+      <h2>My Skills</h2>
+
+      <div class="skills-container">
+        <div class="skill-card">HTML</div>
+        <div class="skill-card">CSS</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">React.js</div>
+        <div class="skill-card">Node.js</div>
+        <div class="skill-card">Express.js</div>
+        <div class="skill-card">MongoDB</div>
+        <div class="skill-card">MySQL</div>
+        <div class="skill-card">Git & GitHub</div>
+        <div class="skill-card">Python</div>
+        <div class="skill-card">C++</div>
+      </div>
+    </section>
+
+
     <!-- Projects Section -->
     <section class="projects section" id="projects">
       <h2>Projects</h2>
@@ -68,6 +104,7 @@
       </form>
 
     </section>
+
   </main>
 
   <footer>
@@ -93,9 +130,11 @@
 
     © 2025 Prashant More. All rights reserved.
   </footer>
+  
 
   <!-- Typed JS -->
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
   <script>
     var typed = new Typed("#element", {
       strings: ["Web Developer", "Coder", "UI Designer", "Tech Enthusiast"],
@@ -111,6 +150,9 @@
       document.body.classList.toggle('light-mode');
     }
   </script>
+
   <script src="script.js"></script>
+
+
 </body>
 </html>

@@ -116,3 +116,12 @@ if (resumeBtn) {
     window.open(`${BACKEND}/api/resume/download`, "_blank");
   });
 }
+
+
+function openSidebar() {
+  document.getElementById("sidebar").style.width = "250px";
+}
+
+function closeSidebar() {
+  document.getElementById("sidebar").style.width = "0";
+}

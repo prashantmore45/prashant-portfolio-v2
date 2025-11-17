@@ -166,7 +166,7 @@ nav ul li a:hover {
   text-align: center;
 }
 
-.about h2, .projects h2, .contact h2 {
+.about h2, .projects h2, .contact h2, .skills h2 {
   font-size: 2.2rem;
   margin-bottom: 20px;
   color: var(--accent-color);
@@ -306,4 +306,83 @@ footer {
 .footer a {
   margin: 0 10px;
   color: var(--text-color);
+}
+
+
+.menu-icon {
+  font-size: 1.7rem;
+  cursor: pointer;
+  margin-right: 12px;
+  display: none;
+}
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--nav-color);
+  overflow-x: hidden;
+  transition: 0.4s;
+  padding-top: 60px;
+  z-index: 200;
+}
+
+.sidebar a {
+  padding: 12px 25px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  display: block;
+  color: var(--text-color);
+}
+
+.sidebar a:hover {
+  color: var(--accent-color);
+}
+
+.sidebar .close-btn {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 2.2rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu-icon {
+    display: inline-block;
+  }
+  nav .right {
+    display: none;
+  }
+}
+
+
+.skills {
+  text-align: center;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.skill-card {
+  padding: 12px 20px;
+  background-color: var(--card-color);
+  color: var(--text-color);
+  border-radius: 10px;
+  font-weight: 600;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+  transition: 0.3s;
+}
+
+.skill-card:hover {
+  transform: scale(1.1);
+  background-color: var(--accent-color);
+  color: white;
 }
