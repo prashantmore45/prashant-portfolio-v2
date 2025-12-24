@@ -2,6 +2,11 @@
 
 const BACKEND = "https://prashant-portfolio-v2-backend.onrender.com";
 
+// Apply saved theme on load
+const savedTheme = localStorage.getItem("theme");
+if (savedTheme === "light") {
+  document.body.classList.add("light-mode");
+}
 
 // MOBILE NAVBAR HAMBURGER
 

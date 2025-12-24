@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Prashant - Developer Portfolio</title>
+  <title>Prashant More | Full Stack Web Developer</title>
   <meta name="description" content="Prashant More | Full Stack Web Developer & Computer Engineering Student. Skilled in MERN stack, backend APIs, and real-world projects.">
   <meta name="keywords" content="Prashant More, Full Stack Developer, MERN, Node.js, Portfolio">
   <meta name="author" content="Prashant More">
@@ -41,7 +41,7 @@
     <nav>
       <div class="left">
         <span class="menu-icon" onclick="openSidebar()">☰</span>
-        Prashant's Portfolio
+        Prashant More | Full Stack Web Developer
       </div>
 
       <ul class="right">
@@ -61,7 +61,9 @@
     <!-- Home Section -->
     <section class="firstSection section" id="home">
       <div class="leftSection">
-        <h1>Hi, I'm <span class="purple">Prashant More</span></h1>
+        <h1>
+          Hi, I'm <span class="purple name">Prashant More</span>
+        </h1>
 
         <h2 class="subtitle">
           Full Stack Web Developer & Computer Engineering Student
@@ -199,12 +201,14 @@
     © 2025 Prashant More. All rights reserved.
   </footer>
   
-  
+
   <!-- Theme Toggle Script -->
   <script>
     function toggleTheme() {
-      document.body.classList.toggle('light-mode');
+      const isLight = document.body.classList.toggle("light-mode");
+      localStorage.setItem("theme", isLight ? "light" : "dark");
     }
+    
   </script>
 
   <script src="script.js"></script>
