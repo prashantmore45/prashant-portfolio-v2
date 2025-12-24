@@ -4,6 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Prashant - Developer Portfolio</title>
+  <meta name="description" content="Prashant More | Full Stack Web Developer & Computer Engineering Student. Skilled in MERN stack, backend APIs, and real-world projects.">
+  <meta name="keywords" content="Prashant More, Full Stack Developer, MERN, Node.js, Portfolio">
+  <meta name="author" content="Prashant More">
+
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -57,8 +61,16 @@
     <!-- Home Section -->
     <section class="firstSection section" id="home">
       <div class="leftSection">
-        Hi, My name is <span class="purple">Prashant</span><br />
-        and I am a <span id="element"></span><br />
+        <h1>Hi, I'm <span class="purple">Prashant More</span></h1>
+
+        <h2 class="subtitle">
+          Full Stack Web Developer & Computer Engineering Student
+        </h2>
+
+        <p class="tagline">
+          I build fast, scalable, and real-world web applications using modern technologies.
+        </p>
+
         <button type="button" class="cta">Download Resume</button>
       </div>
       <div class="rightSection">
@@ -143,9 +155,10 @@
   <!-- Projects Section -->
   <section class="projects section" id="projects">
     <h2>Projects</h2>
-    <div class="project-container">
-      <!-- Project cards will be dynamically inserted here -->
+    <div class="project-container" id="projectsContainer">
+      <p class="loading-text">Loading projects...</p>
     </div>
+
     </section>
 
     <!-- Contact Section -->

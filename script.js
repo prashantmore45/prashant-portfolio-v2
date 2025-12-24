@@ -2,8 +2,6 @@
 
 const BACKEND = "https://prashant-portfolio-v2-backend.onrender.com";
 
-// Replace after deployment
-
 
 // MOBILE NAVBAR HAMBURGER
 
@@ -17,39 +15,66 @@ hamburger.addEventListener("click", () => {
 });
 
 
-
 // LOAD PROJECTS FROM BACKEND
 
 async function loadProjects() {
+
+  const container = document.querySelector(".project-container");
+
+  const cached = localStorage.getItem("projects");
+  if (cached) {
+    renderProjects(JSON.parse(cached));
+    return;
+  }
+
   try {
     const res = await fetch(`${BACKEND}/api/projects`);
     const projects = await res.json();
 
-    let projectsHTML = "";
-
-    projects.forEach((project) => {
-      projectsHTML += `
-        <div class="project-card" data-id="${project.id}">
-          <img src="${project.image}" alt="${project.title}">
-          <h3>${project.title}</h3>
-          <p>${project.description}</p>
-
-          <div class="project-links">
-            ${project.github ? `<a href="${project.github}" target="_blank">View on GitHub</a>` : ""}
-            ${project.demo ? `<a href="${project.demo}" target="_blank">Live Demo</a>` : ""}
-          </div>
-        </div>
-      `;
-    });
-
-    document.querySelector(".project-container").innerHTML = projectsHTML;
+    localStorage.setItem("projects", JSON.stringify(projects));
+    renderProjects(projects);
 
   } catch (err) {
-    console.error("Error loading projects:", err);
+    container.innerHTML = "<p class='loading-text'>Failed to load projects.</p>";
+    console.error(err);
   }
 }
 
-loadProjects();
+
+// LAZY LOAD PROJECTS ON SCROLL
+let projectsLoaded = false;
+
+window.addEventListener("scroll", () => {
+  const projectsSection = document.getElementById("projects");
+  if (!projectsSection || projectsLoaded) return;
+
+  const rect = projectsSection.getBoundingClientRect();
+
+  if (rect.top < window.innerHeight - 100) {
+    loadProjects();
+    projectsLoaded = true;
+  }
+});
+
+
+function renderProjects(projects) {
+  const container = document.querySelector(".project-container");
+  container.innerHTML = "";
+
+  projects.forEach(project => {
+    container.innerHTML += `
+      <div class="project-card">
+        <img src="${project.image}" alt="${project.title}">
+        <h3>${project.title}</h3>
+        <p>${project.description}</p>
+        <div class="project-links">
+          ${project.github ? `<a href="${project.github}" target="_blank">GitHub</a>` : ""}
+          ${project.demo ? `<a href="${project.demo}" target="_blank">Live</a>` : ""}
+        </div>
+      </div>
+    `;
+  });
+}
 
 
 // CONTACT FORM SUBMISSION

@@ -132,6 +132,21 @@ nav ul li a:hover {
   min-width: 300px;
 }
 
+.subtitle {
+  font-size: 1.4rem;
+  margin-top: 10px;
+  opacity: 0.9;
+}
+
+.tagline {
+  font-size: 1.05rem;
+  margin-top: 15px;
+  max-width: 500px;
+  line-height: 1.6;
+  opacity: 0.85;
+}
+
+
 .purple {
   color: var(--accent-color);
 }
@@ -413,4 +428,16 @@ footer {
 .skill-card span {
   font-size: 1rem;
   font-weight: 600;
+}
+
+.loading-text {
+  color: var(--accent-color);
+  font-size: 1.1rem;
+  animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  0% { opacity: 0.4; }
+  50% { opacity: 1; }
+  100% { opacity: 0.4; }
 }
