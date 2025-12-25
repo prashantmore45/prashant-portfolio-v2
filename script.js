@@ -2,23 +2,23 @@
 
 const BACKEND = "https://prashant-portfolio-v2-backend.onrender.com";
 
-// Apply saved theme on load
-const savedTheme = localStorage.getItem("theme");
-if (savedTheme === "light") {
-  document.body.classList.add("light-mode");
-}
+// Apply theme on load (mobile system theme support)
+(function applyInitialTheme() {
+  const savedTheme = localStorage.getItem("theme");
 
-// MOBILE NAVBAR HAMBURGER
-
-const hamburger = document.querySelector(".left");
-const sidebar = document.getElementById("sidebar");
-
-hamburger.addEventListener("click", () => {
-
-  sidebar.classList.toggle("active");
-
-});
-
+  if (savedTheme) {
+    // User preference has priority
+    if (savedTheme === "light") {
+      document.body.classList.add("light-mode");
+    }
+  } else {
+    // No saved preference → follow system theme
+    const prefersLight = window.matchMedia("(prefers-color-scheme: light)").matches;
+    if (prefersLight) {
+      document.body.classList.add("light-mode");
+    }
+  }
+})();
 
 // LOAD PROJECTS FROM BACKEND
 
