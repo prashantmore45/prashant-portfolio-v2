@@ -404,50 +404,154 @@ footer {
 
   /* Navbar */
   nav {
-    flex-direction: column;
+    flex-direction: row;
     gap: 10px;
+    height: 60px;
+    padding: 8px 5%;
+    align-items: center;
   }
 
   .menu-icon {
     display: inline-block;
   }
 
+  nav .left {
+    font-size: 1rem;
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
   nav .right {
     display: none;
+  }
+
+  .cta {
+    width: auto;
+    max-width: 220px;
+    padding: 10px 14px;
+    font-size: 1rem;
   }
 
   .right.active {
     display: flex;
     flex-direction: column;
-    background: #0F1111;
-    position: absolute;
+    background: var(--nav-color);
+    position: fixed;
     top: 60px;
     right: 10px;
-    width: 200px;
-    padding: 10px;
+    width: 90vw;
+    max-width: 320px;
+    padding: 12px;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+    z-index: 300;
+    overflow-y: auto;
+    max-height: calc(100vh - 80px);
   }
 
   /* Hero Section */
   .firstSection {
     flex-direction: column;
     text-align: center;
+    padding-top: 40px;
+    gap: 20px;
   }
 
   .leftSection {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 
   .leftSection h1 {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
 
   .subtitle {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
   }
 
   .tagline {
     font-size: 1rem;
+    padding: 0 12px;
   }
+
+  .rightSection img {
+    width: 90%;
+    max-width: 320px;
+  }
+
+  .project-container {
+    gap: 18px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-card {
+    width: 100%;
+    max-width: 420px;
+  }
+
+  .contact form {
+    padding: 0 12px;
+  }
+
+  .contact input, .contact textarea {
+    font-size: 1rem;
+  }
+
+  footer {
+    padding: 16px 8px;
+  }
+}
+
+/* Extra small phones (≤480px) */
+@media (max-width: 480px) {
+
+  nav {
+    padding: 8px 4%;
+    height: 56px;
+  }
+
+  .menu-icon {
+    font-size: 1.6rem;
+    margin-right: 6px;
+  }
+
+  nav .left {
+    font-size: 0.95rem;
+  }
+
+  .leftSection {
+    font-size: 1.4rem;
+  }
+
+  .leftSection h1 {
+    font-size: 1.8rem;
+  }
+
+  .rightSection img {
+    width: 95%;
+    max-width: 280px;
+  }
+
+  .cta {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+  }
+
+  .right.active {
+    right: 5vw;
+    left: 5vw;
+    width: 90vw;
+    max-width: none;
+    border-radius: 12px;
+  }
+
+  .project-card {
+    width: 100%;
+    padding: 18px;
+  }
+
 }
