@@ -47,6 +47,12 @@ nav {
   z-index: 100;
 }
 
+.nav-left-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
 nav .left {
   display: flex;
   align-items: center;
@@ -110,6 +116,24 @@ nav .left {
 
 .brand-role::before {
   content: " | ";
+}
+
+.logo img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+}
+
+.logo {
+  order: 0;     
+}
+
+.left {
+  order: 1;    
+}
+
+.right {
+  order: 2;    
 }
 
 nav ul {
@@ -551,6 +575,7 @@ footer {
   nav {
     padding: 8px 4%;
     height: 56px;
+    position: relative;
   }
 
   .menu-icon {
@@ -582,6 +607,31 @@ footer {
     font-size: 0.85rem;
     font-weight: 400;
     opacity: 0.85;
+  }
+
+  .logo {
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+
+  .logo img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .logo {
+    order: 3;   
+  }
+
+  .left {
+    order: 1;
+  }
+
+  .right {
+    display: none; 
   }
 
   .leftSection {
