@@ -69,16 +69,34 @@ function renderProjects(projects) {
   projects.forEach(project => {
     container.innerHTML += `
       <div class="project-card">
+
+        <!-- Project Image -->
         <img src="${project.image}" alt="${project.title}">
+
+        <!-- Project Title -->
         <h3>${project.title}</h3>
+
+        <!-- Project Type -->
+        <span class="project-type">${project.type || "Web Application"}</span>
+
+        <!-- Description -->
         <p>${project.description}</p>
-        <div class="project-links">
-          ${project.github ? `<a href="${project.github}" target="_blank">GitHub</a>` : ""}
-          ${project.demo ? `<a href="${project.demo}" target="_blank">Live</a>` : ""}
+
+        <!-- Tech Stack Badges -->
+        <div class="tech-stack">
+          ${project.tech?.map(tech => `<span class="tech-badge">${tech}</span>`).join("") || ""}
         </div>
+
+        <!-- Action Buttons -->
+        <div class="project-links">
+          ${project.github ? `<a href="${project.github}" target="_blank">View Code</a>` : ""}
+          ${project.demo ? `<a href="${project.demo}" target="_blank">Live Demo</a>` : ""}
+        </div>
+
       </div>
     `;
   });
+
 }
 
 
