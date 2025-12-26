@@ -27,7 +27,11 @@ async function loadProjects() {
   const container = document.querySelector(".project-container");
 
   const cached = localStorage.getItem("projects");
-  if (cached) {
+  const cacheVersion = localStorage.getItem("projects_version");
+
+  const CURRENT_VERSION = "v2";
+
+  if (cached && cacheVersion === CURRENT_VERSION) {
     renderProjects(JSON.parse(cached));
     return;
   }
@@ -37,6 +41,8 @@ async function loadProjects() {
     const projects = await res.json();
 
     localStorage.setItem("projects", JSON.stringify(projects));
+    localStorage.setItem("projects_version", CURRENT_VERSION);
+
     renderProjects(projects);
 
   } catch (err) {
