@@ -268,31 +268,27 @@ nav ul li a:hover {
 
 .project-card {
   background-color: var(--card-color);
-  border-radius: 12px;
+  border-radius: 14px;
   padding: 20px;
   width: 280px;
-  box-shadow: 0px 4px 15px rgba(0,0,0,0.3);
-  transition: all 0.3s ease;
-}
-
-.project-card {
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 12px 30px rgba(170, 103, 226, 0.25);
+  box-shadow: 0 12px 28px rgba(170, 103, 226, 0.35);
 }
 
 .project-card img {
   width: 100%;
-  border-radius: 10px;
+  border-radius: 12px;
   margin-bottom: 12px;
   transition: transform 0.3s ease;
 }
 
 .project-card:hover img {
-  transform: scale(1.05);
+  transform: scale(1.04);
 }
 
 .project-card h3 {
@@ -318,44 +314,20 @@ nav ul li a:hover {
 }
 
 .project-links a {
-  padding: 8px 14px;
+  padding: 8px 18px;
   border-radius: 6px;
   text-decoration: none;
-  font-weight: 600;
-  font-size: 0.95rem;
-  transition: background 0.2s ease, color 0.2s ease, transform 0.12s ease;
-  display: inline-block;
-}
-
-/* Secondary / lightweight link (e.g., "Demo") */
-.project-links a:first-child {
-  background: transparent;
-  color: var(--accent-color);
-  border: 1px solid rgba(170, 103, 226, 0.18);
-}
-
-/* Primary action (e.g., "Source / GitHub") */
-.project-links a:last-child {
-  background-color: var(--accent-color);
+  font-weight: 500;
+  font-size: 0.9rem;
   color: #fff;
+  background-color: var(--accent-color);
+  transition: background-color 0.25s ease, transform 0.25s ease;
 }
 
 .project-links a:hover {
+  background-color: #8a6fe2;
   transform: translateY(-2px);
   filter: brightness(0.98);
-}
-
-@media (max-width: 480px) {
-  .project-links {
-    justify-content: center;
-    gap: 12px;
-    margin-top: 8px;
-  }
-  .project-links a {
-    flex: 1 1 auto;
-    text-align: center;
-    padding: 10px;
-  }
 }
 
 .project-card a:hover {
