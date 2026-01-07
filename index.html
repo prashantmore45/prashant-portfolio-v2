@@ -208,7 +208,7 @@
       Visitors: <span id="visitorCount">--</span>
     </div>
 
-    © 2025 Prashant More. All rights reserved.
+    © 2025–<span id="year"></span> Prashant More. All rights reserved.
   </footer>
   
 
@@ -218,6 +218,9 @@
       const isLight = document.body.classList.toggle("light-mode");
       localStorage.setItem("theme", isLight ? "light" : "dark");
     }
+  </script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
   </script>
 
   <script src="script.js"></script>
