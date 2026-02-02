@@ -61,5 +61,4 @@ My goal is to continuously improve my skills by building real-world projects, co
 
 # 🚀 Daily Progress Log
 
-Committed to learning, building, and improving every single day.  
-Every small step counts towards something big. 🌱
+Committed to learning, building, and improving every single day.
