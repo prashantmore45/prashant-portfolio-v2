@@ -4,8 +4,7 @@ Welcome to my portfolio! Here you'll find information about my projects, skills,
 
 ## Features
 - Modern responsive design with light/dark theme toggle  
-- Sections: Home, About, Projects, and Contact  
-- Typing animation on homepage  
+- Sections: Home, About, Projects, and Contact   
 - Links to social profiles and GitHub projects  
 - Deployed live using GitHub Pages  
 
